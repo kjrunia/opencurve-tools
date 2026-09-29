@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="../tools.css" />
+<title>What day will it be?</title>
+</head>
+
+<body>
+<div class="center">
+    <h1>What day?</h1>
+    <form id="myform" novalidate onsubmit="return calc()">
+        <label for="currentday">From what day would you like me to calculate the next day?</label>
+        <select id="currentday">
+            <option value="0">Sunday</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+        </select>
+        <label for="dayslater">How many days later?</label>
+        <input class="numbers" id="dayslater" type="number" min="0" max="9000000" required />
+        <input type="submit" value="OK" />
+    </form>
+
+    <p id="output"></p>
+    
+    <p>This is just a side project for the author to teach himself some JavaScript programming. Do have a look at our <a href="https://opencurve.info/">main website</a> for some more maths and physics.</p>
+    <p>(C) 2020 <a href="https://twitter.com/kjrunia">KJ Runia</a></p>
+        
+    <a href="../">Back</a>
+</div>
+
+<script src="daysfromnow.js"></script>
+
+</body>
+</html>

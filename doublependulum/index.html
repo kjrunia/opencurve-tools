@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../tools.css">
+    <meta charset="utf-8" />
+    <title>Chaos Theory: simulating the motion of a double pendulum system</title>
+  </head>
+  <body>
+    <div class="center">
+        <div id="title"><h1>Chaos Theory: simulating the motion of a double pendulum system</h1></div>
+        <div id="switch_to"><a onclick="switch_language();">Lees in het Nederlands 🇳🇱</a></div>
+        <div id="explainer">
+            <p>The study of non-linear dynamical systems, such as human societies, fluid flow, heartbeat irregularities, predictive robotics, epidemiology, biology, weather systems, and climate systems, focuses on apparently(!) random states of disorder. This branch of mathematics is more commonly known as chaos theory.</p>
+            <p>However, unlike the everyday use of the words <i>chaos</i> and <i>disorder</i> does the mathematical definition <i>not</i> entail randomness; chaotic systems are <i>not</i> unpredictable the way quantum systems are fundamentally unpredictable. Unlike in quantum mechanics, with chaotic systems the underlying mechanism is still entirely deterministic. Contrary to popular belief, the systems mentioned above are all entirely classical in nature, i.e. obeying deterministic laws of nature.</p>
+            <p>And so, while proven to be computationally difficult to varying degrees in the 1880s, chaos theory has since yielded remarkable tools to analyse and simulate seemingly-random disorder, in no small part owing to the steep rise of computational science, especially surging since the 1960s.</p>
+            <h2>Double pendulum</h2>
+            <p>One of the simplest non-linear dynamical systems is the double pendulum. In this simulation you will not see just one but <i>two</i> systems: i.e. <i>two</i> swinging double pendulums.</p>
+            <p>The black double pendulum starts at slightly different initial values (i.e. starting angles) than does the blue double pendulum. These differences are purposely invisible to the naked eye. This is why you only see the black set of pendulums down below: the blue set of pendulums is there, but it's hidden behind it. The blue pendulums are starting at only a very slightly different place, simply unnoticeable to our eyes. Have a look at the initial values below.</p>
+            <p><b>Starting angles black and <span class="bluetext">blue</span> double pendulum</b></p>
+            <p>Upper pendulum:</><p><span class="exactvalues">1.600000000000 rad<br /><span class="bluetext">1.600000000001 rad</span><br />or<br />91.67324722093&deg;<br /><span class="bluetext">91.67324722099&deg;</span></span></p>
+            <p>Lower pendulum:</p><p><span class="exactvalues">0.800000000000 rad<br /><span class="bluetext">0.800000000001 rad</span><br />or<br />45.83662361047&deg;<br /><span class="bluetext">45.83662361052&deg;</span></p>
+            <p>Even with this tiny difference of 0.000000000001 radians, you will see two <i>very</i> different simulation outcomes, i.e. predictions, of the states of the black versus the blue system. Non-linear dynamical systems don't need much to behave in a dramatically different way. Compared to the size of the system, the smallest nudge is capable of derailing the whole thing. Give it at least thirty seconds and you'll see what we mean. After a couple of minutes, both systems seem to have converged to a stable (periodic) state.</p>
+            <p>Note that no energy is added to the system. Both pendulums start with a fixed amount of (potential) energy and that's it. No energy is dissipated. No energy is created. The law of conservation of energy applies.</p>
+            <p>This simulation was written in the programming language JavaScript. All of the real-time calculations are taking place through the central processing unit of your mobile device, tablet or computer until your battery dies out if necessary :). Imagine what enormous chaotic systems one might be able to predict on a few interlinked supercomputers crunching the numbers for days on end. Enjoy the simulation.</p>
+        </div>
+        <p><button onclick="start();">Start</button><button onclick="pause();">Pause</button><button onclick="reset_system();">Reset</button></p>
+        <div id="canvas"></div>
+        <p>This is just a side project for the author to teach himself some JavaScript programming. Do have a look at our <a href="https://opencurve.info/">main website</a> for some more maths and physics.</p>
+        <p>(C) 2020 <a href="https://twitter.com/kjrunia">KJ Runia</a></p>
+        <a href="../">Back</a>
+    </div>
+    <script src="doublependulum.js"></script>
+  </body>
+</html>

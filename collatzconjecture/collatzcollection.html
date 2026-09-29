@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../tools.css" />
+    <link rel="stylesheet" type="text/css" href="collatzconjecture.css" />
+    <script defer src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>The Collatz Conjecture</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1 id="title">A bunch of Collatz Conjecture number series plotted</h1>
+        <div id="switch_to"><a onclick="switch_language();">Lees in het Nederlands 🇳🇱</a></div>
+        <div id="explainer">
+            <p>The Collatz Conjecture is an unsolved problem in mathematics. This JavaScript applet is an accompaniment to our post <a href='https://opencurve.info/the-collatz-conjecture/'>The Collatz Conjecture</a>, where you can read more about the Conjecture. This applet calculates a series of Collatz sequences. If you enter, for example, 10000, it will calculate the Collatz values starting at 10000 (until it reaches the value of 1). It will then calculate the Collatz values starting at 9999. And then 9998, and so on. Lastly, it will plot all the sequences at once down below. Mind you, if you click on OK, it might take a while!</p>
+            <p>Enter a positive integer (a positive whole number):</p>
+        </div>
+        <form onsubmit="return graphCollatz();">
+            <input id="start" type="number" min="4" max="10000" style="width: 200px; display: inline;">
+            <input type="submit" value="OK" style="display: inline;"><div id="status"></div>
+        </form>
+        <div id="collatz_chart_container"></div>
+        <p>This is just a side project for the author to teach himself some JavaScript programming. Do have a look at our <a href="https://opencurve.info/">main website</a> for some more maths and physics.</p>
+        <p>(C) 2020 <a href="https://twitter.com/kjrunia">KJ Runia</a></p>
+        <a href="index.html">Back</a>
+    </div>
+    <script defer src="collatzcollection.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#output {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#submit_button {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 479px) {
+    #start, #stroke_thickness, #fgcolor, #bgcolor {
+        width: 120px;
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #start, #stroke_thickness, #fgcolor, #bgcolor {
+        width: 120px;
+        display: inline;
+    }
+    p {
+        line-height: 26px;
+    }
+
+}

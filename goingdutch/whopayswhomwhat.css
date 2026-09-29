@@ -1,0 +1,85 @@
+.record {
+    display: block;
+    margin-bottom: -25px;
+}
+
+.field {
+    display: inline;
+    margin-right: 5px;
+    width: 10em;
+}
+
+.field .error {
+    background-color: #ff6250;
+}
+
+#calculate {
+    display: block;
+    margin-top: 30px;
+    color: red;
+}
+
+textarea {
+    color: red;
+}
+
+#copyButton {
+    visibility: hidden;
+    display: inline;
+    margin-right: 10px;
+}
+
+#copyButtonResult {
+    display: inline;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    color: green;
+}
+
+#result {
+    width: 90%;
+    color: red;
+}
+
+textarea {
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width: 480px) {
+    #copyButtonResult, textarea {
+        font-size: 24px;
+    }
+    
+    button {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #copyButtonResult {
+        font-size: 18px;
+    }
+    
+    button {
+        font-size: 18px;
+    }
+    
+    #calculate {
+        width: 97%;
+        height: 50px;
+    }
+    
+    .record {
+        margin-bottom: 20px;
+    }
+    
+    .field {
+        margin-bottom: 0px;
+        width: 90%;
+    }
+
+    textarea {
+        font-size: 18px;
+    }
+
+}

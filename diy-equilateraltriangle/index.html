@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="../tools.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<title>Constructing a DIY equileteral triangle</title>
+</head>
+
+<body>
+<div class="center">
+    <h1>Constructing a DIY equileteral triangle</h1>
+    <p>The angle of each corner of an equilateral triangle is 60&#176; or &#960;/3 in radians. As the slant bisects the corner of the triangle, it always has to be at an angle of 30&#176; or &#960;/6 in radians with the base of the slat. This tool will give you the length of slant <i>S</i> so you don't need an intricate combination of a protractor and a setsquare, just a ruler and a pencil. You can just use the ruler to measure the calculated length of <i>S</i>. You will always get the correct angle of 30&#176;.</p>
+    <p><img src="diy-equilateraltriangle-constructing-a-side.jpg" width="800px" /></p>
+    <form id="myform" novalidate onsubmit="return calc()">
+        <label for="d">What is the width <i>d</i> of the slat in mm?</label>
+        <input class="numbers" id="d" type="number" min="0" max="9000000" required />
+        <input type="submit" value="OK" />
+    </form>
+
+    <p id="output"></p>
+    
+    <p>This is just a side project for the author to teach himself some JavaScript programming. Do have a look at our <a href="https://opencurve.info/">main website</a> for some more maths and physics.</p>
+    <p>(C) 2020 <a href="https://twitter.com/kjrunia">KJ Runia</a></p>
+        
+    <a href="../">Back</a>
+</div>
+
+<script src="diy-equilateraltriangle.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+</body>
+</html>

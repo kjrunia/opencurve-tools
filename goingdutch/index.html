@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="../tools.css" />
+<link rel="stylesheet" type="text/css" href="whopayswhomwhat.css" />
+<title>The Going Dutch Calculator</title>
+</head>
+
+<body>
+
+<div class="center">
+    <h1>The Going Dutch Calculator</h1>
+    <p>This will calculate who pays whom how much after a lovely weekend with the whole gang, assuming all costs are shared evenly.</p>
+    <p>Enter the names and for each the total cost they spent. No information is stored. No information is sent to anyone. Just you. On the screen.</p>
+    <form id="myform" novalidate></form>
+    <button onclick="addPerson()">Add person</button><button onclick="removeLastPerson()">Remove last</button><button id="calculate" onclick="calculate()">Calculate</button>
+    <p id="output"></p>
+    <div id="copyButton"><button onclick="copyText()">Copy to clipboard</button></div><div id="copyButtonResult"></div>
+    <p>This is just a side project for the author to teach himself some JavaScript programming. Do have a look at our <a href="https://opencurve.info/">main website</a> for some more maths and physics.</p>
+    <p>(C) 2020 <a href="https://twitter.com/kjrunia">KJ Runia</a></p>
+    <p><a href="../">Back</a></p>
+</div>
+
+
+<script src="whopayswhomwhat.js"></script>
+
+</body>
+</html>

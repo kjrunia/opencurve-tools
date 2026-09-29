@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="../tools.css" />
+<link rel="stylesheet" type="text/css" href="whopayswhomwhat.css" />
+<title>Single Body Inclined Plane Calculator</title>
+</head>
+
+<body>
+
+<div class="center">
+    <h1>Single Body Inclined Plane Calculator</h1>
+    <p>This is a simple tool to calculate forces, accelerations, angles or masses with a given set of initial conditions for a single body on an inclined plane. Bonus: it will not just give you the result of the calculation, it will show you the details of workings.</p>
+    <p>A rough sketch of the situation is given below, including a sketch of the force diagram.</p>
+    <img class="centeredImage" src="single_body_inclined_plane.JPG" />
+
+    <p>What is it that you would like to calculate?</p>
+
+    <select id="objectToBeFound">
+        <option value="">Please select the subject of calculation</option>
+        <option value="theta">Angle: <i>&theta;</i></option>
+        <option value="normal">The normal force <b>N</b></option>
+        <option value="weight">The weight <b>W</b></option>
+        <option value="mass">The mass <i>m</i></option>
+        <option value="pulling">The pulling force <b>P</b></option>
+        <option value="pushing">The pushing force <b>P</b></option>
+        <option value="friction">The friction force <b>F</b></option>
+    </select>
+    
+    <p>This is just a side project for the author to teach himself some JavaScript programming. Do have a look at our <a href="https://opencurve.info/">main website</a> for some more maths and physics.</p>
+    <p>(C) 2020 <a href="https://twitter.com/kjrunia">KJ Runia</a></p>
+    <p><a href="../">Back</a></p>
+
+</div>
+
+<script src="singlebodyinclinedplanecalculator.js"></script>
+
+</body>
+</html>
